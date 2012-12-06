@@ -1,4 +1,2 @@
-minecraft-mod
-=============
+Playing with Minecraft Mod
 
-Minecraft Mod
