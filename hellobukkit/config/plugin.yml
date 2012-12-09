@@ -1,0 +1,16 @@
+name: MyPluginName
+main: org.sample.MyPlugin
+version: 1.0
+
+commands:
+  basic:
+    description: This is a demo command.
+    usage: /<command> [player]
+    permission: <plugin name>.basic
+    permission-message: You don't have <permission>
+
+  basic2:
+    description: This is a demo command that can only be run by a player.
+    usage: /<command> [player]
+    permission: <plugin name>.basic2
+    permission-message: You don't have <permission>
