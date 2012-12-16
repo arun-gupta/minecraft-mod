@@ -3,3 +3,10 @@ version: 0.1
 author: Arun
 
 main: org.sample.bukkitplugin1.MyPlugin
+
+commands:
+   resetblock:
+      description: This command resets the block count.
+      usage: /<command> [place | break | both]
+#      permission: <plugin name>.resetblock
+#      permission-message: You don't have <permission>

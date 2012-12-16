@@ -16,6 +16,7 @@ public final class MyPlugin extends JavaPlugin {
         
         // This will throw a NullPointException if you don't have the command defined in your plugin.yml file!
 //	getCommand("basic").setExecutor(new MyPluginCommandExecutor(this));
+	getCommand("resetblock").setExecutor(new BlockCountCommandExecutor(this));
     }
 
     @Override
