@@ -12,9 +12,10 @@ public final class MyPlugin extends JavaPlugin {
     public void onEnable() {
         getLogger().log(Level.INFO, "{0} plugin enabled", getClass().getName());
         getServer().getPluginManager().registerEvents(new MyPlayerListener(), this);
+        getServer().getPluginManager().registerEvents(new BlockCountListener(), this);
         
         // This will throw a NullPointException if you don't have the command defined in your plugin.yml file!
-	getCommand("basic").setExecutor(new MyPluginCommandExecutor(this));
+//	getCommand("basic").setExecutor(new MyPluginCommandExecutor(this));
     }
 
     @Override

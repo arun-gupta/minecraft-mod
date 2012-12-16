@@ -11,6 +11,7 @@ import org.bukkit.event.player.PlayerLoginEvent;
  * @author Arun Gupta
  */
 public class MyPlayerListener implements Listener {
+    
     @EventHandler
     public void onPlayerLogin(PlayerLoginEvent event) {
         System.out.format("{0} logged in", (event.getPlayer().getPlayerListName()));
@@ -19,10 +20,9 @@ public class MyPlayerListener implements Listener {
     @EventHandler
     public void blockBreak(BlockBreakEvent event) {
         Player player = event.getPlayer();
-        
         if (!player.isOp()) {
             event.setCancelled(true);
             player.sendMessage(ChatColor.RED + "You are not allowed to break this block");
         }
-    }
+    }    
 }
