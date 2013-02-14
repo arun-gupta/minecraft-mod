@@ -1,9 +1,6 @@
-mvn archetype:generate                                  \
-  -DarchetypeGroupId=<archetype-groupId>                \
-  -DarchetypeArtifactId=<archetype-artifactId>          \
-  -DarchetypeVersion=<archetype-version>                \
-  -DgroupId=<my.groupid>                                \
-  -DartifactId=<my-artifactId>
+Typical usage:
+
+mvn archetype:generate -DarchetypeGroupId=<archetype-groupId> -DarchetypeArtifactId=<archetype-artifactId> -DarchetypeVersion=<archetype-version> -DgroupId=<my.groupid> -DartifactId=<my-artifactId>
 
 Sample usage:
 
